@@ -1,0 +1,22 @@
+<h1>Calculadora de {{nombre}}</h1>
+<label for="numero1">Número 1:</label>
+    <input type="text" id="numero1" name="numero1" [(ngModel)]="a">
+    <br>
+
+    <label for="numero2">Número 2:</label>
+    <input type="text" id="numero2" name="numero2" [(ngModel)]="b"><br>
+
+<p>Primer Numero= {{a}}</p>
+<p>Primer Numero={{b}}</p>
+<p>Resultado={{r}}</p>
+
+<button (click)="suma()">Calcular suma</button> 
+
+
+<hr>
+<p>Vamos hacer un input y un output de una lista</p>
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+<app-mensaje (newItemEvent)="addItem($event)"></app-mensaje>

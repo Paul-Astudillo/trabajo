@@ -1,0 +1,22 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+float: center;
+  }
+  .formulario{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    float: right;
+  }
+  .menu{
+    float: left;
+  }
+  .lista {
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid green;
+    padding: 40px;
+    text-align: center;
+  }
+  

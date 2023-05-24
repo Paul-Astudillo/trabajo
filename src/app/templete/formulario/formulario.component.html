@@ -1,0 +1,13 @@
+<form class="container">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="contacto.nombre">
+<br>
+    <label for="cedula">Cédula:</label>
+    <input type="text" id="cedula" name="cedula" [(ngModel)]="contacto.cedula">
+<br>
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" [(ngModel)]="contacto.direccion">
+
+    <button class="boton" (click)="guardar()">Enviar</button>
+  </form>
+

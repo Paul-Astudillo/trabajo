@@ -1,0 +1,31 @@
+<div id="content">
+
+
+    <table>
+        <thead>
+            <tr>
+              <th>Cedula</th>
+              <th>Nombre</th>
+              <th>Direccion</th>
+              <th>Accion</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <span *ngIf="listadoContactos.length == 0">
+                No existen contactos
+            </span>
+            <tr *ngFor="let contacto of listadoContactos" >
+              <td>{{contacto.cedula}}</td>
+              <td>{{contacto.nombre}}</td>
+              <td>{{contacto.direccion}}</td>
+              <td>  <a (click)="editar(contacto)">Editar   </a> &nbsp; 
+                <a (click)="eliminar(contacto)">    Eliminar</a>
+            </tr>
+            
+          </tbody>
+    
+    
+    
+    </table>
+    
